@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(115deg, hsl(240, 96%, 11%), hsl(300, 95%, 8%));
+    position: fixed;
+}
+.list-container {
+    background-color: white;
+    min-height: 100px;
+    width: 50vw;
+    min-width: 150px;
+    margin: 30px auto 30px;
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
+}
+.input_container input {
+    outline: none;
+    border: 1px solid blue;
+    padding: 4px;
+    border-radius: 4px;
+    width: 55%;
+    height: 30px;
+    font-size: large;
+}
+.input_container button {
+    outline: none;
+    border: 1px solid blue;
+    padding: 4px;
+    border-radius: 4px;
+    width: 25%;
+    height: 30px;
+    background-color: hsl(240, 96%, 11%);
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+ul li {
+    margin-left: 13px;
+    list-style: none;
+    font-size: large;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+@media (max-width: 550px){
+    .list-container {
+        width: 80vw;
+    }
+}
