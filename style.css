@@ -56,6 +56,7 @@ ul li {
 
 ul li.checked {
     text-decoration: line-through;
+    margin-top: 5px;
 }
 
 @media (max-width: 550px){
